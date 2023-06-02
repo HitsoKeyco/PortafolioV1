@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;    
+}
+
+.app{
+    width: 100vw;
+    height: 100vw;
+    display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+    grid-template-rows: auto;
+}
+
+:root{
+    --textColor: rgb(107, 105, 105);
+    --bgAll: rgb(255, 251, 251);
+
+    
+
+}
+.nav{
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    box-shadow: 3px 7px 12px -6px rgba(0,0,0,0.2);
+}
+
+.logo{
+    padding-left: 25px;
+}
+.nameLogo{
+    font-size: 1em;
+}
+
+.conjuntoLogo{
+    display: flex;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+}
+
+.link{
+    cursor: pointer;
+    font-size: 1.2em;
+    line-height: 2;
+    font-weight: 500;
+    color: var(--textColor);
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    right: -100vw;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bgAll);
+    opacity: 0;
+    transition: 0.4s;
+    
+}
+
+.menuShow{
+    opacity: 1;
+    right: 0;
+}
+
+.bx-menu{
+    font-size: 25px;
+    align-self: center;
+    padding-right: 25px;
+    cursor: pointer;
+}
+
