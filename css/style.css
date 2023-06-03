@@ -15,25 +15,39 @@
 
 :root {
     --textColor: rgb(107, 105, 105);
-    --bgAll: rgb(255, 251, 251);
+    --bgAll: rgb(255, 255, 255);
 }
 
 .nav {
-    position: sticky;    
-    top: -60px;
-    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     height: 60px;    
-    z-index: 9999;
-    transition: top 0.3s ease-in-out;
-    
+    z-index: 3;
+    transition: 0.3s ease-in-out;    
 }
 
-.nav_shadow{
-    box-shadow: 3px 7px 12px -6px rgba(0, 0, 0, 0.2);
+.nav_efect{
+    height: 65px;
+}
+
+.shadows_nav{
+    position: fixed;    
+    top: 0;
+    width: 100vw;
     background-color: var(--bgAll);
-    
+    height: 10px; 
+    box-shadow: 3px 7px 12px -6px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.show_shadows_nav{
+    opacity: 1;
+    height: 60px; 
 }
 
 .logo {
@@ -42,6 +56,7 @@
 
 .nameLogo {
     font-size: 1em;
+    user-select: none;
 }
 
 .conjuntoLogo {
@@ -97,17 +112,59 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 
     position: relative;
+    background-image: url(/src/svg/bubles.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
 }
 
+.bubles{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    
+    
+}
 .text_dashboard{
     background: linear-gradient(to right, #ff0000, #bf09c5);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: clamp(2.5rem, -1.5rem + 8vw, 6rem);    
+    font-size: clamp(2.1rem, -1.1rem + 8vw, 6rem);    
     font-weight: bold;
     text-align: center;
+    user-select: none;
+    
+}
+
+.eti{
+    margin-top: 25px;
+    background: linear-gradient(to right, #ff0000, #bf09c5);
+    font-size: clamp(1rem, -1.5rem + 8vw, 1.2rem);
+    padding: 15px;
+    height: 3em;
+    border-radius: 12px 0 12px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    animation: shake 10s ease-in-out infinite;
+    user-select: none;
+}
+
+
+@keyframes shake {
+    0% { transform: translate(0); }
+    20% { transform: translate(-10px, 10px); }
+    40% { transform: translate(10px, -10px); }
+    60% { transform: translate(-10px, -10px); }
+    80% { transform: translate(10px, 10px); }
+    100% { transform: translate(0); }
 }
 
 .dec1{
@@ -121,13 +178,11 @@ ul {
     grid-column: 1/2;
     grid-row: 3/4;
     height: 100vh;
-
     position: relative;
 }
 
 .dec1r{
     position: absolute;
-    top: 0;    
     width: 100%;
-    
+    top: 0;    
 }
