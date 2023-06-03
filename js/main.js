@@ -49,14 +49,25 @@ function showShadowNav() {
 }
 showShadowNav();
 
+function handleMode() {
 
-// window.addEventListener('scroll', function () {
-//     var row2 = document.querySelector('.dashboard');
-//     var scrollPos = window.pageYOffset;
+    const moonHTML = document.querySelector('.bx');
+    const bodyHtml = document.querySelector('.mode')
+    console.log(bodyHtml);
 
-//     if (scrollPos > 400) {
-//         row2.style.height = '100vh';
-//     } else {
-//         row2.style.height = '100vh';
-//     }
-// });
+    moonHTML.addEventListener('click', () => {
+        if (moonHTML.classList.contains('bx-moon')) {
+            moonHTML.classList.remove('bx-moon')
+            moonHTML.classList.add('bx-brightness')
+            bodyHtml.classList.add('modeDark')
+        } else {
+            moonHTML.classList.add('bx-moon')
+            moonHTML.classList.remove('bx-brightness')
+            bodyHtml.classList.remove('modeDark')
+        }
+    })
+
+
+}
+handleMode();
+

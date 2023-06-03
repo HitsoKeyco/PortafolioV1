@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,21 +10,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<body>
+
+<body class="mode">
     <div class="app" id="top">
-        <div class="shadows_nav"></div>        
+        <div class="shadows_nav"></div>
         <div class="nav">
             <div class="conjuntoLogo">
                 <img class='logo' src="/src/svg/logo.svg" alt="img">
                 <h1 class="nameLogo">Sergio Olivo</h1>
-                
+
             </div>
-            <i class='bx bx-menu'></i>
-            <div class="menu">                
+            <div class="icons_nav">
+                <!--  clase para cambiar icon -->
+                <i class='bx bx-moon bx-tada bx-flip-vertical'></i>
+                <i class='bx bx-menu'></i>
+            </div>
+
+            <div class="menu">
                 <ul>
                     <li class="link"><a href="#top">Home</a></li>
                     <li class="link">Project</li>
@@ -32,25 +40,28 @@
                 </ul>
             </div>
         </div>
-        
-        <div class="dashboard">   
+
+        <div class="dashboard">
             <p class="text_dashboard">Empowering <br><span class="mind">minds</span>, shaping <br> the future.</p>
-            <div class="eti">Full Stack Developer</div>           
-            <img class='dec1' src="./src/svg/dec1.svg" alt="">                 
+            <div class="eti">Full Stack Developer</div>
+            <img class='dec1' src="./src/svg/dec1.svg" alt="">
         </div>
 
         <div class="presentation">
             <img class='dec1r' src="./src/svg/dec1r.svg" alt="">
             <div class="cardPhoto"></div>
         </div>
+
+
     </div>
 
- 
 
-    
+
+
     <script src="./js/main.js"></script>
 
-    
-    
+
+
 </body>
+
 </html>
