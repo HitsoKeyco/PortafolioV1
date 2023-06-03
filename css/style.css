@@ -255,7 +255,7 @@ a {
 
 .cardPhoto{
     width: 100%;   
-    height: 10em;
+    height: 150px;
     background-color: var(--bgAll);
     box-shadow: var(--shadowBox);
     margin-bottom: 70px;
@@ -273,8 +273,8 @@ a {
 
 .doge{
     position: absolute;
-    top: -100px;
-    height: 80%;
+    top: -150px;
+    height: 180px;
     border-radius: 25px;
 }
 .phrase1{
