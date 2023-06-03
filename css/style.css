@@ -1,50 +1,59 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'IBM Plex Sans', sans-serif;    
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
-.app{
-    width: 100vw;
-    height: 100vw;
+.app {    
+    height: calc(100vh - 60px);
+    /* Restar la altura del .nav */
     display: grid;
-    grid-template-columns: repeat(1 , 1fr);
-    grid-template-rows: auto;
+    grid-template-columns: 100%;
+    grid-template-rows: 60px max-content;
 }
 
-:root{
+:root {
     --textColor: rgb(107, 105, 105);
     --bgAll: rgb(255, 251, 251);
-
-    
-
 }
-.nav{
-    position: sticky;
+
+.nav {
+    position: sticky;    
+    top: -60px;
+    left: 0;
     display: flex;
     justify-content: space-between;
-    height: 60px;
-    box-shadow: 3px 7px 12px -6px rgba(0,0,0,0.2);
+    height: 60px;    
+    z-index: 9999;
+    transition: top 0.3s ease-in-out;
+    
 }
 
-.logo{
+.nav_shadow{
+    box-shadow: 3px 7px 12px -6px rgba(0, 0, 0, 0.2);
+    background-color: var(--bgAll);
+    
+}
+
+.logo {
     padding-left: 25px;
 }
-.nameLogo{
+
+.nameLogo {
     font-size: 1em;
 }
 
-.conjuntoLogo{
+.conjuntoLogo {
     display: flex;
     align-items: center;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-.link{
+.link {
     cursor: pointer;
     font-size: 1.2em;
     line-height: 2;
@@ -52,7 +61,7 @@ ul{
     color: var(--textColor);
 }
 
-.menu{
+.menu {
     position: fixed;
     top: 0;
     right: -100vw;
@@ -64,18 +73,61 @@ ul{
     background-color: var(--bgAll);
     opacity: 0;
     transition: 0.4s;
-    
+
 }
 
-.menuShow{
+.menuShow {
     opacity: 1;
     right: 0;
 }
 
-.bx-menu{
+.bx-menu {
     font-size: 25px;
     align-self: center;
     padding-right: 25px;
     cursor: pointer;
 }
 
+
+.dashboard {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    height: calc(100vh - 60px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: relative;
+}
+
+.text_dashboard{
+    background: linear-gradient(to right, #ff0000, #bf09c5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: clamp(2.5rem, -1.5rem + 8vw, 6rem);    
+    font-weight: bold;
+    text-align: center;
+}
+
+.dec1{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+.presentation{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    height: 100vh;
+
+    position: relative;
+}
+
+.dec1r{
+    position: absolute;
+    top: 0;    
+    width: 100%;
+    
+}
