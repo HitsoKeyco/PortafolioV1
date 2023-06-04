@@ -55,6 +55,7 @@ function handleMode() {
     const bodyHtml = document.querySelector('.mode')
     const catHTML = document.querySelector('.dec1')
     const catnHTML = document.querySelector('.dec1night')
+    const moonSvgHTML = document.querySelector('.moonSvg')
     console.log(bodyHtml);
 
     moonHTML.addEventListener('click', () => {
@@ -64,7 +65,7 @@ function handleMode() {
             bodyHtml.classList.add('modeDark')
             catHTML.classList.add('dec1Hidden')
             catnHTML.classList.add('dec1nightShow')
-            
+            moonSvgHTML.classList.add('moonSvgShow')
 
             
         } else {
@@ -73,6 +74,7 @@ function handleMode() {
             bodyHtml.classList.remove('modeDark')
             catHTML.classList.remove('dec1Hidden')
             catnHTML.classList.remove('dec1nightShow')
+            moonSvgHTML.classList.remove('moonSvgShow')
             
             
         }

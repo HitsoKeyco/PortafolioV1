@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2019 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="13.7394mm" height="13.7394mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 17.61 17.61"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str2 {stroke:#A6A1A2;stroke-width:0;stroke-miterlimit:22.9256}
+    .str1 {stroke:#737373;stroke-width:0;stroke-miterlimit:22.9256}
+    .str0 {stroke:#737373;stroke-width:0.01;stroke-miterlimit:22.9256}
+    .fil2 {fill:#D9DADA}
+    .fil7 {fill:#BBB7B7}
+    .fil9 {fill:#9C999A}
+    .fil1 {fill:#828180}
+    .fil8 {fill:#7A7978}
+    .fil5 {fill:#75726F}
+    .fil4 {fill:url(#id0)}
+    .fil3 {fill:url(#id1)}
+    .fil6 {fill:url(#id2)}
+    .fil10 {fill:url(#id3)}
+    .fil0 {fill:url(#id4)}
+   ]]>
+  </style>
+  <linearGradient id="id0" gradientUnits="userSpaceOnUse" x1="15.42" y1="5.3" x2="14.5" y2="5.95">
+   <stop offset="0" style="stop-opacity:1; stop-color:#828180"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#969494"/>
+  </linearGradient>
+  <linearGradient id="id1" gradientUnits="userSpaceOnUse" x1="15.09" y1="10.95" x2="16.03" y2="11.63">
+   <stop offset="0" style="stop-opacity:1; stop-color:#878484"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#706E6D"/>
+  </linearGradient>
+  <linearGradient id="id2" gradientUnits="objectBoundingBox" x1="36.9989%" y1="6.3323%" x2="63.006%" y2="93.6802%">
+   <stop offset="0" style="stop-opacity:1; stop-color:#6A6968"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#5E5D5D"/>
+  </linearGradient>
+  <linearGradient id="id3" gradientUnits="userSpaceOnUse" x1="6.6" y1="15.86" x2="6.39" y2="16.7">
+   <stop offset="0" style="stop-opacity:1; stop-color:#676665"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#565656"/>
+  </linearGradient>
+  <radialGradient id="id4" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.0926865 1.13257 -1.13257 0.0926865 18 -4)" cx="9.86" cy="8.28" r="5.22" fx="9.86" fy="8.28">
+   <stop offset="0" style="stop-opacity:1; stop-color:#D4D4D4"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#565656"/>
+  </radialGradient>
+ </defs>
+ <g id="Capa_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2089424167136">
+   <circle class="fil0" cx="8.81" cy="8.81" r="8.81"/>
+   <ellipse class="fil1 str0" transform="matrix(1.39782 0.355659 -0.497388 0.999513 1.62264 5.86418)" rx="0.1" ry="0.21"/>
+   <ellipse class="fil1 str1" cx="1.57" cy="7.81" rx="0.14" ry="0.22"/>
+   <ellipse class="fil1 str1" transform="matrix(3.56952 -0.731198 0.731198 3.56952 2.80481 11.1331)" rx="0.1" ry="0.15"/>
+   <circle class="fil2 str2" cx="8.21" cy="8.78" r="0.63"/>
+   <path class="fil3 str1" d="M16.06 10.91c0.13,0.34 0.01,0.78 -0.27,0.99 -0.28,0.21 -0.61,0.11 -0.73,-0.23 -0.13,-0.34 -0.01,-0.78 0.27,-0.99 0.28,-0.21 0.61,-0.11 0.73,0.23z"/>
+   <path class="fil4 str1" d="M15.21 5.05c0.28,0.23 0.39,0.68 0.25,1 -0.14,0.32 -0.48,0.39 -0.75,0.16 -0.28,-0.23 -0.39,-0.68 -0.25,-1 0.14,-0.32 0.48,-0.39 0.75,-0.16z"/>
+   <ellipse class="fil1 str1" transform="matrix(2.57924 2.15707 -0.847672 1.94373 15.2802 7.05718)" rx="0.1" ry="0.15"/>
+   <ellipse class="fil5 str1" transform="matrix(1.25779 -1.46219 1.94728 3.01384 2.13765 13.0442)" rx="0.1" ry="0.15"/>
+   <path class="fil6 str1" d="M12.35 15.87c-0.08,0.19 -0.29,0.32 -0.48,0.3 -0.19,-0.02 -0.28,-0.18 -0.21,-0.37 0.08,-0.19 0.29,-0.32 0.48,-0.3 0.19,0.02 0.28,0.19 0.21,0.37z"/>
+   <circle class="fil7 str1" cx="7.4" cy="11.08" r="0.31"/>
+   <ellipse class="fil8 str1" cx="8.42" cy="1.33" rx="1.03" ry="0.38"/>
+   <circle class="fil9 str2" cx="5.93" cy="5.99" r="0.63"/>
+   <circle class="fil2 str2" cx="9.97" cy="9.08" r="1.03"/>
+   <circle class="fil2 str2" cx="8.53" cy="10.36" r="0.59"/>
+   <path class="fil10" d="M6.43 15.82c0.61,0.18 1.14,0.52 1.18,0.78 0.04,0.25 -0.43,0.32 -1.04,0.14 -0.61,-0.18 -1.14,-0.52 -1.18,-0.78 -0.04,-0.25 0.43,-0.32 1.04,-0.14z"/>
+   <ellipse class="fil1 str0" transform="matrix(2.28189 1.28111 -1.34198 1.51727 3.31154 3.54691)" rx="0.1" ry="0.21"/>
+   <ellipse class="fil1 str1" transform="matrix(3.36217 0.0356287 0.575137 2.04104 12.5247 2.68741)" rx="0.1" ry="0.15"/>
+   <circle class="fil9 str2" cx="9.3" cy="4.04" r="0.94"/>
+   <path class="fil6 str1" d="M11.73 13.3c-0.08,0.19 -0.29,0.32 -0.48,0.3 -0.19,-0.02 -0.28,-0.18 -0.21,-0.37 0.08,-0.19 0.29,-0.32 0.48,-0.3 0.19,0.02 0.28,0.19 0.21,0.37z"/>
+  </g>
+ </g>
+</svg>

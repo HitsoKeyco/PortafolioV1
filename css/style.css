@@ -157,16 +157,75 @@ a {
     align-items: center;
 
     position: relative;
-    background-image: url('/src/svg/bubles.svg');
+    background-image: url('/src/svg/star.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.bubles {
-    grid-column: 1/2;
-    grid-row: 2/3;
+
+.moonSvg {
+    position: absolute;
+    top: 100px;
+    right: 30px;
+    width: 15rem;
+    opacity: 0;
+    transition: opacity 0.4s;
+    animation:  moon-disappear 0.8s forwards;
 }
+
+.moonSvgShow {
+    opacity: 1;
+    transition: opacity 0.4s;
+    animation: moon-rotate 150s infinite linear, moon-appear 0.8s forwards;
+    
+}
+
+@keyframes moon {
+    10% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes moon-rotate {
+    from {
+        transform: rotate(0deg); top: 100px;
+
+    }
+    to {
+        transform: rotate(360deg); top: 50px;
+    }
+}
+
+@keyframes moon-appear {
+    from {
+        top: -100px; /* Posición inicial arriba de la pantalla */
+        opacity: 0;
+    }
+    to {
+        top: 70px; /* Posición final en la pantalla */
+        opacity: 1;
+    }
+}
+
+@keyframes moon-disappear {
+    from {
+        top: 70px; /* Posición final en la pantalla */
+        opacity: 1;
+    }
+    to {
+
+        top: -100px; /* Posición inicial arriba de la pantalla */
+        opacity: 0;
+    }
+}
+
 
 .text_dashboard {
     background: linear-gradient(to right, #ff0000, #bf09c5);
