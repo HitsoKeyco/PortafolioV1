@@ -53,6 +53,8 @@ function handleMode() {
 
     const moonHTML = document.querySelector('.bx');
     const bodyHtml = document.querySelector('.mode')
+    const catHTML = document.querySelector('.dec1')
+    const catnHTML = document.querySelector('.dec1night')
     console.log(bodyHtml);
 
     moonHTML.addEventListener('click', () => {
@@ -60,10 +62,19 @@ function handleMode() {
             moonHTML.classList.remove('bx-moon')
             moonHTML.classList.add('bx-brightness')
             bodyHtml.classList.add('modeDark')
+            catHTML.classList.add('dec1Hidden')
+            catnHTML.classList.add('dec1nightShow')
+            
+
+            
         } else {
             moonHTML.classList.add('bx-moon')
             moonHTML.classList.remove('bx-brightness')
             bodyHtml.classList.remove('modeDark')
+            catHTML.classList.remove('dec1Hidden')
+            catnHTML.classList.remove('dec1nightShow')
+            
+            
         }
     })
 

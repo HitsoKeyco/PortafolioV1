@@ -234,6 +234,24 @@ a {
 
 }
 
+.dec1Hidden{
+    display: none;
+}
+
+
+.dec1night{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.dec1nightShow{
+    display: block;
+}
+
+
 .presentation {
     grid-column: 1/2;
     grid-row: 3/4;    
