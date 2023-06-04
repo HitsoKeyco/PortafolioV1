@@ -257,6 +257,7 @@ a {
     width: 100%;   
     height: 150px;
     background-color: var(--bgAll);
+    color: var(--textColor);
     box-shadow: var(--shadowBox);
     margin-bottom: 70px;
     margin-top: 250px;
