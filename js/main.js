@@ -69,3 +69,32 @@ function handleMode() {
 }
 handleMode();
 
+function openExternalPage1() {
+    window.open("https://ecommercesergiolivo.netlify.app", "_blank");
+}
+openExternalPage1()
+
+function openExternalPage2() {
+    window.open("https://entregablen1sergiolivo.netlify.app", "_blank");
+}
+openExternalPage2()
+
+function openExternalPage3() {
+    window.open("https://country-api-rest-olivo.netlify.app", "_blank");
+}
+openExternalPage3()
+
+function openExternalPage4() {
+    window.open("https://country-api-rest-olivo.netlify.app", "_blank");
+}
+openExternalPage4()
+
+function openExternalPage5() {
+    window.open("https://app.netlify.com/sites/weather-app-olivo/", "_blank");
+}
+openExternalPage5()
+
+function openExternalPage6() {
+    window.open("https://rick-and-morty-olivo.netlify.app", "_blank");
+}
+openExternalPage6()
