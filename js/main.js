@@ -36,26 +36,23 @@ function showShadowNav() {
 
         if (currentScrollPos === 0) {
             navShowHTML.classList.remove('show_shadows_nav');
-            navHTML.classList.remove('nav_efect');
+            
             console.log('333');
         } else if (currentScrollPos < prevScrollPos) {
-            navHTML.classList.remove('nav_efect');
+            
         } else {
             navShowHTML.classList.add('show_shadows_nav');
-            navHTML.classList.add('nav_efect');
+            
         }
         prevScrollPos = currentScrollPos;
     });
 }
 showShadowNav();
 
+// funcion modo obscuro
 function handleMode() {
-
     const moonHTML = document.querySelector('.bx');
-    const bodyHtml = document.querySelector('.mode')
-    const catHTML = document.querySelector('.dec1')
-    const catnHTML = document.querySelector('.dec1night')
-    const moonSvgHTML = document.querySelector('.moonSvg')
+    const bodyHtml = document.querySelector('.mode')  
     console.log(bodyHtml);
 
     moonHTML.addEventListener('click', () => {
@@ -63,24 +60,12 @@ function handleMode() {
             moonHTML.classList.remove('bx-moon')
             moonHTML.classList.add('bx-brightness')
             bodyHtml.classList.add('modeDark')
-            catHTML.classList.add('dec1Hidden')
-            catnHTML.classList.add('dec1nightShow')
-            moonSvgHTML.classList.add('moonSvgShow')
-
-            
         } else {
             moonHTML.classList.add('bx-moon')
             moonHTML.classList.remove('bx-brightness')
             bodyHtml.classList.remove('modeDark')
-            catHTML.classList.remove('dec1Hidden')
-            catnHTML.classList.remove('dec1nightShow')
-            moonSvgHTML.classList.remove('moonSvgShow')
-            
-            
         }
     })
-
-
 }
 handleMode();
 
