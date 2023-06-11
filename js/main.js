@@ -36,13 +36,13 @@ function showShadowNav() {
 
         if (currentScrollPos === 0) {
             navShowHTML.classList.remove('show_shadows_nav');
-            
+
             console.log('333');
         } else if (currentScrollPos < prevScrollPos) {
-            
+
         } else {
             navShowHTML.classList.add('show_shadows_nav');
-            
+
         }
         prevScrollPos = currentScrollPos;
     });
@@ -52,7 +52,7 @@ showShadowNav();
 // funcion modo obscuro
 function handleMode() {
     const moonHTML = document.querySelector('.bx');
-    const bodyHtml = document.querySelector('.mode')  
+    const bodyHtml = document.querySelector('.mode')
     console.log(bodyHtml);
 
     moonHTML.addEventListener('click', () => {
@@ -72,6 +72,7 @@ handleMode();
 function openExternalPage1() {
     window.open("https://ecommercesergiolivo.netlify.app", "_blank");
 }
+
 
 
 function openExternalPage2() {
@@ -97,3 +98,20 @@ function openExternalPage5() {
 function openExternalPage6() {
     window.open("https://rick-and-morty-olivo.netlify.app", "_blank");
 }
+
+
+//efecto fade scroll
+
+window.addEventListener('scroll', function () {
+    let hightHTML = window.innerHeight / 1.3;
+    const elementsHTML = document.querySelectorAll('.efectFade');
+
+    elementsHTML.forEach(function (element) {
+        let spaceToUpElement = element.getBoundingClientRect().top;
+
+        if (spaceToUpElement <= hightHTML) {
+            element.classList.add('showFade');
+        }
+    });
+});
+
