@@ -14,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;500;600&display=swap"
         rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
 </head>
 
 <body class="mode">
@@ -26,29 +28,52 @@
         </div>
         <div class="icons_nav">
             <!--  clase para cambiar icon -->
-            <i class='bx bx-moon bx-tada bx-flip-vertical'></i>
-            <i class='bx bx-menu'></i>
+
+            <div class="menu-flotante">
+                <ul class="items-flotante">
+                    <div class="languaje">EN</div>
+                    <li class="link mf"><a href="#top">Inicio</a></li>
+                    <li class="link mf">Proyectos</li>
+                    <li class="link mf">CV</li>
+                    <li class="link mf">Me</li>
+                    <li class="link mf ">Contactos</li>
+                    <i class="bxmoon bx bxs-moon bx-tada bx-flip-vertical"></i>
+
+                </ul>
+            </div>
+            <div class="icon-accion-nav">
+                <i class="bxmoon bx bxs-moon bx-tada bx-flip-vertical"></i>
+                <i class='bx bx-menu'></i>
+            </div>
         </div>
 
+
+
         <div class="menu">
+            <i class='bx bx-x closeicon'></i>
             <ul>
-                <li class="link"><a href="#top">Home</a></li>
-                <li class="link">Project</li>
-                <li class="link"> Info</li>
-                <li class="link">Contact</li>
+
+                <li class="link mf"><a href="#top">Inicio</a></li>
+                <li class="link"><a href="#proyectos">Proyectos</a></li>
+                <li class="link"><a href="#acerca-de-mi">Acerca de mi</a></li>
+                <li class="link"><a href="#estudios">Estudios</a></li>
+                <li class="link">Contactos</li>
             </ul>
         </div>
+
+
+
     </div>
 
     <div class="app" id="top">
         <div class="item_dash_1">
-            <p class="item_dash_child_1">Empowering</p>
-            <p class="item_dash_child_2"><span class="mind">MINDS,</span>shaping</p>
-            <p class="item_dash_child_3">the future.</p>
+            <p class="item_dash_child_1">Programando</p>
+            <p class="item_dash_child_2"><span class="mind">IDEAS,</span>soluciones</p>
+            <p class="item_dash_child_3">digitales.</p>
         </div>
         <div class="item_dash_2"></div>
 
-        <section class="into">
+        <section class="into" id="acerca-de-mi">
             <div class="cont_into">
                 <div class="line"></div>
                 <p>FULL STACK WEB DEVELOPER</p>
@@ -59,7 +84,7 @@
             <img class='img_person efectFade' src="/src/png/person.png" alt="person">
             <div class="text_person">
                 <p class="web efectFade">web</p>
-                <p class="services efectFade">SERVICES</p>
+                <p class="services efectFade">SERVICIOS</p>
                 <div class="line_services"></div>
                 <div class="flag">
                     <div class="yellow"></div>
@@ -70,38 +95,38 @@
         </section>
 
         <section class="presentation">
-            <p class="text_presentation efectFade">Hi, I’m Sergio.
-
-                As a junior web developer, I take pride in
-                offering high-quality services that cater
-                to your needs. My main goal is to create
-                functional, appealing, and result-oriented
-                websites. With a user-centric approach,
-                I strive to ensure a seamless browsing
-                experience and an intuitive interface.</br>
-
-
-                By utilizing the latest technologies and
-                industry standards, I can create responsive
-                and mobile-optimized websites. Moreover,
-                I am dedicated to staying up-to-date with the
-                latest trends and web development practices
-                to deliver modern and efficient solutions.</br>
+            <p class="text_presentation efectFade">
+                Hola, soy Sergio.<br></br>
+                Como desarrollador web junior, me enorgullece
+                ofrecer servicios de alta calidad que atienden
+                a tus necesidades, mi objetivo principal es crear
+                codigo funcional, atractivo y orientado a resultados
+                a sitios web con un enfoque centrado en el usuario.
+                Me esfuerzo por garantizar una navegación fluida,
+                experiencia amigable y una interfaz intuitiva.<br></br>
 
 
-                Trust in my skills and knowledge to help
-                elevate your online presence.
-                I am committed to providing top-notch
-                services and building strong client
-                relationships, delivering exceptional results
-                and guaranteed satisfaction.
+                Al utilizar las últimas tecnologías y
+                estándares de la industria, puedo crear
+                y sitios web optimizados para dispositivos móviles. Además,
+                me dedico a estar al día con las
+                últimas tendencias y prácticas de desarrollo web
+                para ofrecer soluciones modernas y eficientes.<br></br>
+
+
+                Confía en mis habilidades y conocimientos para ayudar
+                y elevar su presencia en línea.
+                Estoy comprometido a proporcionar la mejor calidad
+                servicios y construir un cliente con fuertes
+                relaciones, entregando resultados excepcionales
+                y satisfacción garantizada.
             </p>
         </section>
 
         <section class="into_2">
             <div class="cont_into">
                 <div class="line"></div>
-                <p>SKILLS</p>
+                <p>HABILIDADES</p>
             </div>
         </section>
 
@@ -109,10 +134,10 @@
             <img class='img_skills efectFade' src="/src/png/skilla.png" alt="">
         </div>
 
-        <section class="into_3">
+        <section class="into_3" id="proyectos">
             <div class="cont_into">
                 <div class="line"></div>
-                <p>PROJECTS</p>
+                <p>PROYECTOS</p>
             </div>
         </section>
 
@@ -122,133 +147,146 @@
         </section>
 
         <section class="text_project_1 efectFade">
-            <p>I have recently developed an impressive e-commerce website
-                that showcases my skills as a web developer. This e-commerce
-                platform is designed to provide a seamless shopping experience
-                for users, with a user-friendly interface and intuitive navigation.</br>
-
-
-                With a focus on functionality and aesthetics, I carefully crafted
-                the design and layout to create a visually appealing and
-                professional online store. The website features a responsive design,
-                ensuring optimal viewing and smooth browsing across various
-                devices and screen sizes.
+            <p>Recientemente he desarrollado un impresionante sitio web de comercio electrónico que muestra
+                mis habilidades como desarrollador web. Esta plataforma de comercio electrónico está diseñada
+                para proporcionar una experiencia de compra fluida para los usuarios, con una interfaz fácil
+                de usar y una navegación intuitiva.
+                Con un enfoque en la funcionalidad y la estética, cuidadosamente diseñé el diseño para crear
+                una tienda en línea visualmente atractiva y profesional. El sitio web cuenta con un diseño
+                responsive, garantizando una visualización óptima y una navegación fluida en diversos
+                dispositivos y tamaños de pantalla.
             </p>
-            <button class="button_project" onclick="openExternalPage1()">Access</button>
+            <button class="button_project" onclick="openExternalPage1()">Acceder</button>
         </section>
 
 
         <section class="project_2">
-            <p class='text_project efectFade'>RANDOM PHRASE GENERATOR</p>
+            <p class='text_project efectFade'>API FRASES ALEATORIAS</p>
             <img class='img_project efectFade' src="/src/png/randomPhrase.png" alt="img_ecommerce">
         </section>
 
         <section class="text_project_2 efectFade">
-            <p >Using the React library has allowed me to create an interactive and
-                efficient application. Through the implementation of reusable components
-                and intelligent state management, I have managed to optimize the performance
-                and usability of the application.
+            <p>El uso de la biblioteca React me ha permitido crear una aplicación interactiva y eficiente.
+                A través de la implementación de componentes reutilizables y una gestión inteligente del estado,
+                he logrado optimizar el rendimiento y la usabilidad de la aplicación.
 
-                The main functionality of the project lies in the query to a random phrases API.
-                This ensures that users always find fresh and motivating content when visiting
-                the site. In addition, I have implemented additional features, such as the
-                possibility of sharing phrases on social networks and the option to mark as
-                favorites those that most resonate with users.
+                La funcionalidad principal del proyecto se basa en la consulta a una API de frases aleatorias.
+                Esto garantiza que los usuarios siempre encuentren contenido fresco y motivador al visitar
+                el sitio. Además, he implementado características adicionales, como la posibilidad de compartir
+                frases en redes sociales y la opción de marcar como favoritas aquellas que más resuenen con los
+                usuarios.
             </p>
-            <button class="button_project" onclick="openExternalPage2()">Access</button>
+            <button class="button_project" onclick="openExternalPage2()">Acceder</button>
         </section>
 
         <section class="project_3">
-            <p class='text_project efectFade'>RANDOM REST COUNTRY</p>
+            <p class='text_project efectFade'>API INFORMACION DE PAISES</p>
             <img class='img_project efectFade' src="/src/png/randomRestCountry.png" alt="img_ecommerce">
         </section>
 
         <section class="text_project_3 efectFade">
-            <p>The functionality of the project is based on querying a country data API,
-                which provides detailed information about countries based on user input.
-                Users can easily search for specific countries and get data like population,
-                area, capital, languages spoken, and more.
-                To improve the user experience, I've implemented features such as auto-completion
-                suggestions while typing country names, as well as the ability to bookmark and save
-                favorite countries for quick access.
+            <p>La funcionalidad del proyecto se basa en consultar una API de datos de países, que proporciona
+                información detallada sobre países según la entrada del usuario. Los usuarios pueden buscar
+                fácilmente países específicos y obtener datos como población, área, capital, idiomas hablados y más.
+                Para mejorar la experiencia del usuario, he implementado características como sugerencias de
+                autocompletado mientras se escriben nombres de países, así como la capacidad de marcar y guardar países
+                favoritos para un acceso rápido.
 
-                By working with React, I have optimized the performance and maintainability
-                of the application. The use of reusable components and efficient state management
-                has allowed a fluid and efficient interaction for the user.
+                Al trabajar con React, he optimizado el rendimiento y la mantenibilidad de la aplicación.
+                El uso de componentes reutilizables y una gestión eficiente del estado ha permitido una
+                interacción fluida y eficiente para el usuario.
             </p>
-            <button class="button_project" onclick="openExternalPage3()">Access</button>
+            <button class="button_project" onclick="openExternalPage3()">Acceder</button>
         </section>
 
         <section class="project_4">
-            <p class='text_project efectFade'>RANDOM REST COUNTRY</p>
+            <p class='text_project efectFade'>API INFORMACION DE PAISES</p>
             <img class='img_project efectFade' src="/src/png/randomRestCountry.png" alt="img_ecommerce">
         </section>
 
         <section class="text_project_4 efectFade">
-            <p>The functionality of the project is based on querying a country data API,
-                which provides detailed information about countries based on user input.
-                Users can easily search for specific countries and get data like population,
-                area, capital, languages spoken, and more.
-                To improve the user experience, I've implemented features such as auto-completion
-                suggestions while typing country names, as well as the ability to bookmark and save
-                favorite countries for quick access.
+            <p>La funcionalidad del proyecto se basa en consultar una API de datos de países, que proporciona
+                información detallada sobre países según la entrada del usuario. Los usuarios pueden buscar
+                fácilmente países específicos y obtener datos como población, área, capital, idiomas hablados y más.
+                Para mejorar la experiencia del usuario, he implementado características como sugerencias de
+                autocompletado mientras se escriben nombres de países, así como la capacidad de marcar y guardar países
+                favoritos para un acceso rápido.
 
-                By working with React, I have optimized the performance and maintainability
-                of the application. The use of reusable components and efficient state management
-                has allowed a fluid and efficient interaction for the user.
+                Al trabajar con React, he optimizado el rendimiento y la mantenibilidad de la aplicación.
+                El uso de componentes reutilizables y una gestión eficiente del estado ha permitido una
+                interacción fluida y eficiente para el usuario.
             </p>
-            <button class="button_project" onclick="openExternalPage4()">Access</button>
+            <button class="button_project" onclick="openExternalPage4()">Acceder</button>
         </section>
 
 
         <section class="project_5">
-            <p class='text_project efectFade'>WEATHER APP</p>
+            <p class='text_project efectFade'>APP CLIMA</p>
             <img class='img_project efectFade' src="/src/png/watherApiRest.png" alt="img_ecommerce">
         </section>
 
         <section class="text_project_5 efectFade">
-            <p>The main functionality of my project is based on consulting a weather forecast API.
-                Users have the ability to enter a country name into a search field and get real-time
-                information on current weather conditions, such as temperature, humidity, wind speed,
-                and weather overview.
-                I have sought to offer an intuitive and interactive user experience. Weather data is
-                presented in a clear and understandable way, allowing users to make informed decisions
-                about their clothing and outdoor activities.                
-                Using React, I have created reusable components that allow for efficient state management
-                and optimized performance. The app automatically updates to provide real-time weather
-                information, giving users a smooth and reliable experience.
+            <p>La funcionalidad principal de mi proyecto se basa en consultar una API de pronóstico del tiempo.
+                Los usuarios tienen la capacidad de ingresar el nombre de un país en un campo de búsqueda y
+                obtener información en tiempo real sobre las condiciones climáticas actuales, como temperatura,
+                humedad, velocidad del viento y resumen del clima.
+                He buscado ofrecer una experiencia de usuario intuitiva e interactiva. Los datos meteorológicos
+                se presentan de manera clara y comprensible, lo que permite a los usuarios tomar decisiones
+                informadas sobre su vestimenta y actividades al aire libre.
+                Utilizando React, he creado componentes reutilizables que permiten una gestión eficiente del
+                estado y un rendimiento optimizado. La aplicación se actualiza automáticamente para proporcionar
+                información meteorológica en tiempo real, brindando a los usuarios una experiencia fluida y
+                confiable.
             </p>
-            <button class="button_project" onclick="openExternalPage5()">Access</button>
+            <button class="button_project" onclick="openExternalPage5()">Acceder</button>
         </section>
 
         <section class="project_6">
-            <p class='text_project efectFade'>RICK AND MORTY API REST</p>
+            <p class='text_project efectFade'>API RICK AND MORTY</p>
             <img class='img_project efectFade' src="/src/png/rickAndMorty.png" alt="img_ecommerce">
         </section>
 
         <section class="text_project_6 efectFade">
-            <p>As a passionate web developer, I have taken advantage of React's capabilities to
-                create an engaging and interactive user interface. By querying a Rick and Morty API,
-                my app gives users the ability to explore the various characters, episodes, 
-                and locations that make this series a unique experience.
-                The app uses HTML and CSS to achieve an attractive and responsive design,
-                adapted to different devices and screen sizes. I have strived to create a smooth and
-                enjoyable user experience where Rick and Morty fans can immerse themselves in the fascinating
-                world of the series.
-                
-                The Rick and Morty API provides a wide range of data, such as detailed character, episode,
-                and location information. My App allows users to search and filter this data, allowing them
-                to easily find their favorite content and discover interesting new details.
+            <p>Como desarrollador web apasionado, he aprovechado las capacidades de React para crear una
+                interfaz de usuario atractiva e interactiva. Al consultar una API de Rick and Morty,
+                mi aplicación brinda a los usuarios la capacidad de explorar los diferentes personajes,
+                episodios y ubicaciones que hacen de esta serie una experiencia única.
+                La aplicación utiliza HTML y CSS para lograr un diseño atractivo y receptivo, adaptado a
+                diferentes dispositivos y tamaños de pantalla. Me he esforzado por crear una experiencia
+                de usuario fluida y agradable donde los fanáticos de Rick and Morty puedan sumergirse en
+                el fascinante mundo de la serie.
+
+                La API de Rick and Morty proporciona una amplia gama de datos, como información detallada
+                de personajes, episodios y ubicaciones. Mi aplicación permite a los usuarios buscar y filtrar estos
+                datos, lo que les permite encontrar fácilmente su contenido favorito y descubrir nuevos detalles
+                interesantes.
             </p>
-            <button class="button_project" onclick="openExternalPage6()">Access</button>
+            <button class="button_project" onclick="openExternalPage6()">Acceder</button>
         </section>
 
-        <div class="comment-container">
+        <section class="into_4" id="estudios">
+            <div class="cont_into">
+                <div class="line"></div>
+                <p>PREPARACION ACADEMICA</p>
+            </div>
+        </section>
+
+        <section class="hcj">
+            <img class='img_certificates efectFade' src="/src/png/hcj.png" alt="">
+        </section>
+
+        <section class="react ">
+            <img class='img_certificates efectFade' src="/src/png/react.png" alt="">
+        </section>
+
+
+
+        <!-- <div class="comment-container">
             <div class="fb-comments" data-href="https://sergiolivo.com" data-numposts="15"></div>
         </div>
     
         <div id="fb-root"></div>
-        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v17.0" nonce="wxp8Cgay"></script>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v17.0" nonce="wxp8Cgay"></script> -->
 
 
     </div>

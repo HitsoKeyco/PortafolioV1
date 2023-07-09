@@ -6,7 +6,6 @@ function handleMain() {
     const menuHTML = document.querySelector('.menu')
     bxMenuHTML.addEventListener('click', () => {
         menuHTML.classList.add('menuShow');
-        console.log('click');
     })
 }
 handleMain();
@@ -23,6 +22,20 @@ function handdleMainHidden() {
     })
 }
 handdleMainHidden()
+
+//Cerrar menu hamburguesa 
+
+function closeMenuHamburg() {
+    const closeHTML = document.querySelector('.closeicon')
+    const menuHTML = document.querySelector('.menu');
+
+    closeHTML.addEventListener('click', () => {
+        menuHTML.classList.remove('menuShow')
+    })
+
+}
+
+closeMenuHamburg();
 
 //Agregar sombra en nav al momento de scroll
 
@@ -51,23 +64,26 @@ showShadowNav();
 
 // funcion modo obscuro
 function handleMode() {
-    const moonHTML = document.querySelector('.bx');
-    const bodyHtml = document.querySelector('.mode')
-    console.log(bodyHtml);
+    const moonHTMLList = document.querySelectorAll('.bxmoon');
+    const bodyHtml = document.querySelector('.mode');
 
-    moonHTML.addEventListener('click', () => {
-        if (moonHTML.classList.contains('bx-moon')) {
-            moonHTML.classList.remove('bx-moon')
-            moonHTML.classList.add('bx-brightness')
-            bodyHtml.classList.add('modeDark')
-        } else {
-            moonHTML.classList.add('bx-moon')
-            moonHTML.classList.remove('bx-brightness')
-            bodyHtml.classList.remove('modeDark')
-        }
-    })
+    moonHTMLList.forEach((moonHTML) => {
+        moonHTML.addEventListener('click', () => {
+            if (moonHTML.classList.contains('bxs-moon')) {
+                moonHTML.classList.remove('bxs-moon');
+                moonHTML.classList.add('bx-brightness');
+                bodyHtml.classList.add('modeDark');
+            } else {
+                moonHTML.classList.add('bxs-moon');
+                moonHTML.classList.remove('bx-brightness');
+                bodyHtml.classList.remove('modeDark');
+            }
+        });
+    });
 }
+
 handleMode();
+
 
 function openExternalPage1() {
     window.open("https://ecommercesergiolivo.netlify.app", "_blank");
