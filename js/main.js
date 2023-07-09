@@ -107,7 +107,7 @@ function openExternalPage4() {
 
 
 function openExternalPage5() {
-    window.open("https://app.netlify.com/sites/weather-app-olivo/", "_blank");
+    window.open("https://weather-app-olivo.netlify.app/", "_blank");
 }
 
 

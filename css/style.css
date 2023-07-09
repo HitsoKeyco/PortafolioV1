@@ -34,19 +34,21 @@ html {
 body {
     background-color: var(--bodyColor);
     transition: 2s;
-
+    background-image: url(/src/svg/paternbg.svg);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;      
 }
 
 .modeDark {
     --bodyColor: #131417;
     --textColor: rgb(155, 145, 145);
-    --textColorDasboard: rgb(88, 90, 78);
+    --textColorDasboard: rgb(65, 64, 64);
     --bgAll: #c4c7cf;
     --seccion2Bg: #2C303A transition: 2s;
+    --bgDashboard: #8aa52a;
 }
 
 .nav {
@@ -82,12 +84,13 @@ body {
     position: fixed;
     top: 0;
     width: 100vw;
-    background-color: #cccc33;
+    background-color: var(--bgDashboard);
     height: 10px;
     box-shadow: var(--shadowBox);
     z-index: 2;
     opacity: 0;
-    transition: 0.3s ease-in-out;
+    transition: 0.7s ease-in-out;
+    
 }
 
 .show_shadows_nav {
@@ -135,20 +138,20 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--bgAll);
+    background-color: var(--bgDashboard);
     opacity: 0;
     transition: 0.4s;
     color: var(--textColorDasboard);
-
-
 }
 
 .closeicon {
     position: absolute;
     padding: 20px;
-    font-size: 1.2em;
+    font-size: 1.8em;
     top: 0;
     right: 0;
+    
+    
 }
 
 a {
@@ -183,6 +186,8 @@ a {
 
     background-color: var(--bgDashboard);
     color: var(--textColorDasboard);
+
+    transition: 2s;
 }
 
 .mind {
@@ -251,6 +256,7 @@ a {
     font-size: clamp(1vw, 4vw, 1em);
     text-align: justify;
     color: var(--textColor);
+    font-weight: bold;
 }
 
 .line {
@@ -280,6 +286,7 @@ a {
 .time {
     margin-right: 10px;
     color: var(--textColor);
+    font-weight: bold;
 }
 
 .img_person {
@@ -375,23 +382,20 @@ a {
     justify-content: space-between;
     align-items: center;
     font-size: clamp(10px, 3vw, 16px);
-    font-weight: 800;
+    font-weight: bold;
 }
 
 .skills {
     grid-column: 1/2;
-    grid-row: 7/8;
-    height: 50px;
-
+    grid-row: 7/8;   
+    width: 100%;
     display: flex;
     align-items: center;
 }
 
 .img_skills {
     width: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
-
+    padding: 20px;
     opacity: 0;
     transition: 0.8s;
     transform: translateY(20%);
@@ -405,13 +409,13 @@ a {
     height: 50px;
     display: flex;
     font-size: clamp(10px, 3vw, 16px);
-    font-weight: 800;
+    font-weight: bold;
 }
 
 .text_project {
     padding-top: 25px;
     padding-bottom: 25px;
-    font-weight: bold;
+    
     width: 100%;
     padding-left: 25px;
     color: var(--textColor);
@@ -436,7 +440,7 @@ a {
 
 .img_project {
     width: 90%;
-    box-shadow: 1px 0px 5px 0px rgba(157, 206, 25, 0.75);
+    
     border-radius: 5px;
 
     opacity: 0;
@@ -718,15 +722,14 @@ footer {
 
 .items-flotante {
     display: none;
+    
 }
 
 .img_certificates {
-
+    display: flex;
     width: 90%;
-
     border-radius: 5px;
     padding-top: 25px;
-
 
 }
 
@@ -734,6 +737,8 @@ footer {
     grid-column: 1/2;
     grid-row: 23/24;
     display: flex;
+
+
 }
 
 .react {
@@ -741,6 +746,11 @@ footer {
     grid-row: 24/25;
 
     display: flex;
+    
+
+
+
+    
 }
 
 .comment-container {
@@ -819,6 +829,7 @@ footer {
         grid-column: 1/3;
         grid-row: 5/6;
         height: auto;
+        width: 100%;
     }
 
 
@@ -929,18 +940,25 @@ footer {
         position: absolute;
         top: 0;
         right: 0;
+        
+        
     }
 
     .items-flotante {
         display: flex;
         justify-content: center;
-        align-items: center;
-        background-color: #cccc33;
+        align-items: center;        
         border-radius: 0 0 0 10px;
         height: 60px;
         width: 450px;
         color: var(--textColorDasboard);
+        background-color: var(--bgDashboard);
+        transition: 2s;
 
+    }
+
+    .menu-flotante-hidden {
+        
     }
 
     .mf {
