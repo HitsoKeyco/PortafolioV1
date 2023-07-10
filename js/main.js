@@ -1,3 +1,17 @@
+window.addEventListener('load', function () {
+    // Obtener los elementos de carga
+    var contenedorLoader = document.querySelector('.contenedor');
+    var cargando = document.querySelector('.cargando');
+
+    // Establecer un tiempo de espera de 2 segundos
+    setTimeout(function () {
+        // Ocultar el elemento de carga después de 1 segundos
+        contenedorLoader.style.display = 'none';
+        cargando.style.display = 'none';
+    }, 1000);
+});
+
+
 
 //Mostrar menu hamburguesa
 

@@ -10,6 +10,87 @@ html {
     scroll-behavior: smooth;
 }
 
+@import url('//fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap');
+
+
+
+.cargando {
+    position: relative;
+    color: #FFF;
+    margin-top: 2em;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    
+}
+
+.contenedor-loader {
+    height: 6em;
+}
+
+#contenedor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+
+
+    background-color: var(--bgDashboard);
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    color: #000;
+
+    z-index: 9999;
+}
+
+.loader,
+.loader:before,
+.loader:after {
+    background: #FFF;
+    animation: cargando 1s infinite ease-in-out;
+    width: 1em;
+    height: 4em;
+}
+
+.loader:before,
+.loader:after {
+    position: absolute;
+    top: 0;
+    content: '';
+}
+
+.loader:before {
+    left: -1.5em;
+}
+
+.loader {
+    text-indent: -9999em;
+    margin: 40% auto;
+    position: relative;
+    font-size: 11px;
+    animation-delay: 0.16s;
+}
+
+.loader:after {
+    left: 1.5em;
+    animation-delay: 0.32s;
+}
+
+@keyframes cargando {
+
+    0%,
+    80%,
+    100% {
+        box-shadow: 0 0 #FFF;
+        height: 4em;
+    }
+
+    40% {
+        box-shadow: 0 -2em #ffffff;
+        height: 5em;
+    }
+}
+
 .app {
     max-width: 1200px;
     /* Restar la altura del .nav */
@@ -30,7 +111,6 @@ html {
     --bgButtonHover: #e2e258;
     --textColorDasboard: rgb(92, 84, 84);
     --bgcolorHamburMenu: white
-
 }
 
 body {
@@ -41,7 +121,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow-x: hidden;      
+    overflow-x: hidden;
 }
 
 .modeDark {
@@ -95,7 +175,7 @@ body {
     z-index: 2;
     opacity: 0;
     transition: 0.7s ease-in-out;
-    
+
 }
 
 .show_shadows_nav {
@@ -146,34 +226,34 @@ ul {
     background-color: var(--bgcolorHamburMenu);
     opacity: 0;
     transition: 0.4s;
-    
+
 
 }
 
-.dec1{
+.dec1 {
     width: 100%;
     position: absolute;
     bottom: 0;
 }
 
-.dec2{
+.dec2 {
     width: 100%;
     position: absolute;
     bottom: 0;
     opacity: 0;
 }
 
-.dec1-hidden{
+.dec1-hidden {
     display: none;
 }
 
-.dec2-show{
+.dec2-show {
     opacity: 1;
 }
 
 .closeicon {
     position: absolute;
-    
+
     font-size: 1.8em;
     top: 15px;
     right: 20px;
@@ -181,9 +261,9 @@ ul {
     color: #59595a;
 }
 
-.menumod{
+.menumod {
     position: absolute;
-    
+
     font-size: 1.2em;
     top: 20px;
     left: 30px;
@@ -424,7 +504,7 @@ a {
 
 .skills {
     grid-column: 1/2;
-    grid-row: 7/8;   
+    grid-row: 7/8;
     width: 100%;
     display: flex;
     align-items: center;
@@ -452,7 +532,7 @@ a {
 .text_project {
     padding-top: 25px;
     padding-bottom: 25px;
-    
+
     width: 100%;
     padding-left: 25px;
     color: var(--textColor);
@@ -477,7 +557,7 @@ a {
 
 .img_project {
     width: 90%;
-    
+
     border-radius: 5px;
 
     opacity: 0;
@@ -759,7 +839,7 @@ footer {
 
 .items-flotante {
     display: none;
-    
+
 }
 
 .img_certificates {
@@ -783,11 +863,11 @@ footer {
     grid-row: 24/25;
 
     display: flex;
-    
 
 
 
-    
+
+
 }
 
 .comment-container {
@@ -977,14 +1057,14 @@ footer {
         position: absolute;
         top: 0;
         right: 0;
-        
-        
+
+
     }
 
     .items-flotante {
         display: flex;
         justify-content: center;
-        align-items: center;        
+        align-items: center;
         border-radius: 0 0 0 10px;
         height: 60px;
         width: 450px;
@@ -996,12 +1076,12 @@ footer {
 
     .mf {
         font-size: 0.7em;
-        
+
     }
 
     .mf:hover {
         text-decoration: underline;
-        
+
     }
 
     .icon-accion-nav {
