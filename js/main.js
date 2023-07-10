@@ -66,6 +66,8 @@ showShadowNav();
 function handleMode() {
     const moonHTMLList = document.querySelectorAll('.bxmoon');
     const bodyHtml = document.querySelector('.mode');
+    const menuMoodHtml = document.querySelector('.dec1')
+    const menuMood2Html = document.querySelector('.dec2')
 
     moonHTMLList.forEach((moonHTML) => {
         moonHTML.addEventListener('click', () => {
@@ -73,10 +75,19 @@ function handleMode() {
                 moonHTML.classList.remove('bxs-moon');
                 moonHTML.classList.add('bx-brightness');
                 bodyHtml.classList.add('modeDark');
+                menuMoodHtml.classList.add('dec1-hidden')
+                menuMood2Html.classList.add('dec2-show')
+                
+                
             } else {
                 moonHTML.classList.add('bxs-moon');
                 moonHTML.classList.remove('bx-brightness');
                 bodyHtml.classList.remove('modeDark');
+                menuMoodHtml.classList.remove('dec1-hidden')
+                menuMood2Html.classList.remove('dec2-show')
+                
+                
+                
             }
         });
     });

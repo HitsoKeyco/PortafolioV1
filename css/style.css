@@ -29,6 +29,8 @@ html {
     --bgDashboard: #cccc33;
     --bgButtonHover: #e2e258;
     --textColorDasboard: rgb(92, 84, 84);
+    --bgcolorHamburMenu: white
+
 }
 
 body {
@@ -49,7 +51,10 @@ body {
     --bgAll: #c4c7cf;
     --seccion2Bg: #2C303A transition: 2s;
     --bgDashboard: #8aa52a;
+    --bgcolorHamburMenu: rgb(39, 39, 39);
 }
+
+
 
 .nav {
     position: fixed;
@@ -122,7 +127,7 @@ ul {
     font-size: 1.2em;
     line-height: 2;
     font-weight: 500;
-    color: var(--textColorDasboard);
+    color: var(--textColor);
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -138,20 +143,52 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--bgDashboard);
+    background-color: var(--bgcolorHamburMenu);
     opacity: 0;
     transition: 0.4s;
-    color: var(--textColorDasboard);
+    
+
+}
+
+.dec1{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.dec2{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+}
+
+.dec1-hidden{
+    display: none;
+}
+
+.dec2-show{
+    opacity: 1;
 }
 
 .closeicon {
     position: absolute;
-    padding: 20px;
+    
     font-size: 1.8em;
-    top: 0;
-    right: 0;
+    top: 15px;
+    right: 20px;
+
+    color: #59595a;
+}
+
+.menumod{
+    position: absolute;
     
-    
+    font-size: 1.2em;
+    top: 20px;
+    left: 30px;
+
+    color: #59595a;
 }
 
 a {
@@ -963,10 +1000,12 @@ footer {
 
     .mf {
         font-size: 0.7em;
+        
     }
 
     .mf:hover {
         text-decoration: underline;
+        
     }
 
     .icon-accion-nav {
