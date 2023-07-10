@@ -61,38 +61,70 @@ function showShadowNav() {
     });
 }
 showShadowNav();
-
-// funcion modo obscuro
-function handleMode() {
+// Función para establecer el modo oscuro
+function setDarkMode() {
     const moonHTMLList = document.querySelectorAll('.bxmoon');
     const bodyHtml = document.querySelector('.mode');
-    const menuMoodHtml = document.querySelector('.dec1')
-    const menuMood2Html = document.querySelector('.dec2')
+    const menuMoodHtml = document.querySelector('.dec1');
+    const menuMood2Html = document.querySelector('.dec2');
 
+    moonHTMLList.forEach((moonHTML) => {
+        moonHTML.classList.remove('bxs-moon');
+        moonHTML.classList.add('bx-brightness');
+        bodyHtml.classList.add('modeDark');
+        menuMoodHtml.classList.add('dec1-hidden');
+        menuMood2Html.classList.add('dec2-show');
+    });
+
+    // Guardar el estado del modo oscuro en el almacenamiento local
+    localStorage.setItem('darkMode', 'true');
+}
+
+// Función para establecer el modo claro
+function setLightMode() {
+    const moonHTMLList = document.querySelectorAll('.bxmoon');
+    const bodyHtml = document.querySelector('.mode');
+    const menuMoodHtml = document.querySelector('.dec1');
+    const menuMood2Html = document.querySelector('.dec2');
+
+    moonHTMLList.forEach((moonHTML) => {
+        moonHTML.classList.add('bxs-moon');
+        moonHTML.classList.remove('bx-brightness');
+        bodyHtml.classList.remove('modeDark');
+        menuMoodHtml.classList.remove('dec1-hidden');
+        menuMood2Html.classList.remove('dec2-show');
+    });
+
+    // Guardar el estado del modo oscuro en el almacenamiento local
+    localStorage.setItem('darkMode', 'false');
+}
+
+// Función para manejar el evento de cambio de modo oscuro
+function handleMode() {
+    const moonHTMLList = document.querySelectorAll('.bxmoon');
     moonHTMLList.forEach((moonHTML) => {
         moonHTML.addEventListener('click', () => {
             if (moonHTML.classList.contains('bxs-moon')) {
-                moonHTML.classList.remove('bxs-moon');
-                moonHTML.classList.add('bx-brightness');
-                bodyHtml.classList.add('modeDark');
-                menuMoodHtml.classList.add('dec1-hidden')
-                menuMood2Html.classList.add('dec2-show')
-                
-                
+                setDarkMode();
             } else {
-                moonHTML.classList.add('bxs-moon');
-                moonHTML.classList.remove('bx-brightness');
-                bodyHtml.classList.remove('modeDark');
-                menuMoodHtml.classList.remove('dec1-hidden')
-                menuMood2Html.classList.remove('dec2-show')
-                
-                
-                
+                setLightMode();
             }
         });
     });
 }
 
+// Verificar si el modo oscuro está activo en el almacenamiento local y establecerlo en consecuencia
+function checkDarkMode() {
+    const darkMode = localStorage.getItem('darkMode');
+
+    if (darkMode === 'true') {
+        setDarkMode();
+    } else {
+        setLightMode();
+    }
+}
+
+checkDarkMode();
 handleMode();
 
 
