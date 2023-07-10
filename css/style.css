@@ -127,7 +127,7 @@ ul {
     font-size: 1.2em;
     line-height: 2;
     font-weight: 500;
-    color: var(--textColor);
+    color: var(--textColorDefault);
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -988,14 +988,10 @@ footer {
         border-radius: 0 0 0 10px;
         height: 60px;
         width: 450px;
-        color: var(--textColorDasboard);
+        color: var(--textColorDefault);
         background-color: var(--bgDashboard);
         transition: 2s;
 
-    }
-
-    .menu-flotante-hidden {
-        
     }
 
     .mf {
