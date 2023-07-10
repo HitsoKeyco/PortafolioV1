@@ -164,7 +164,7 @@ function openExternalPage6() {
 //efecto fade scroll
 
 window.addEventListener('scroll', function () {
-    let hightHTML = window.innerHeight / 1.1;
+    let hightHTML = window.innerHeight / 1.3;
     const elementsHTML = document.querySelectorAll('.efectFade');
 
     elementsHTML.forEach(function (element) {
